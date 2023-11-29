@@ -15,8 +15,8 @@ class MailSender{
         this.gmail = this.nodemailer.createTransport({
             service: 'gmail',
             auth: {
-              user: 'acaptureit@gmail.com',
-              pass: 'Captureit#123'
+              user: 'nangia2002@gmail.com',
+              pass: 'cxrknbvxmptiqevl'
             }
           });
         console.log('Mail obj created')
@@ -29,9 +29,8 @@ class MailSender{
         to: this.tomail,
         subject: this.sub,
         html: this.message,
-        //html: "<b>From Capture It</b>", // html body
+        //html: "<b>From Check Mate 360</b>", // html body
       };
-      
       this.gmail.sendMail(mailOptions, function(error, info){
         if (error) {
           console.log(error);

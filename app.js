@@ -20,7 +20,7 @@ var classrouter = require('./routes/classroom')
 
 var app = express();
 
-mongoose.connect('mongodb://localhost:27017/attendance_portal',{useNewUrlParser: true, useUnifiedTopology: true})
+mongoose.connect('mongodb+srv://root:toor@cluster0.tlm8leb.mongodb.net',{useNewUrlParser: true, useUnifiedTopology: true})
 
 require('./config/passport');
 
